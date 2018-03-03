@@ -1,0 +1,62 @@
+{
+  "parser"  : "babel-eslint",
+  "plugins": [
+    "import"
+  ],
+  "extends" : ["airbnb"],
+  "rules": {
+    "comma-dangle": 0,
+    "no-underscore-dangle": 1,
+    "default-case": 0,
+    "new-cap": [2, {"capIsNew": false, "newIsCap": true}],
+    "no-floating-decimal": 0,
+    "no-confusing-arrow": 0,
+    "no-shadow": 2,
+    "import/no-unresolved": [2, {"commonjs": true}],
+    "import/named": 2,
+    "import/default": 2,
+    "import/namespace": 2,
+    "import/export": 2,
+    "max-len": 0,
+    "key-spacing": [2, {"beforeColon": false, "afterColon": true, "mode": "minimum"}],
+    "no-use-before-define": 0,
+    "react/jsx-no-bind": 0,
+    "react/prefer-stateless-function": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+  },
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "globals": {
+    "test": false,
+    "expect": false,
+    "after": false,
+    "afterEach": false,
+    "before": false,
+    "beforeEach": false,
+    "console": false,
+    "describe": false,
+    "it": false,
+    "module": false,
+    "process": false,
+    "require": false,
+    "window": false,
+    "RecordType": false
+  },
+  "settings": {
+    "import/ignore": [
+      "node_modules",
+      "\\.json$",
+      "dist"
+    ],
+    "import/parser": "babel-eslint",
+    "import/resolve": {
+      "extensions": [
+        ".js",
+        ".jsx",
+        ".json"
+      ]
+    }
+  }
+}
