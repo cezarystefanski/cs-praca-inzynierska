@@ -4,13 +4,11 @@ const path = require('path');
 const config = {
   entry: path.resolve(__dirname, '..', './src/client/index.js'),
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/dist/',
+    path: path.resolve(__dirname, '..', 'dist'),
     filename: 'main.js'
   },
   devServer: {
     contentBase: path.resolve(__dirname, '..', 'src/client'),
-    publicPath: '/dist/'
   },
   module: {
     rules: [
