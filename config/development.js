@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 
 const config = {
@@ -30,12 +31,20 @@ const config = {
       },
       {
         test: /\.scss$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'postcss-loader',
-          'sass-loader'
-        ]
+        use: ExtractTextWebpackPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            {
+              loader: 'css-loader',
+              options: {
+                modules: true,
+                localIdentName: '[local]--[hash:base64:5]',
+              }
+            },
+            'postcss-loader',
+            'sass-loader',
+          ]
+        })
       },
     ]
   },
@@ -43,6 +52,10 @@ const config = {
     new HtmlWebpackPlugin({
       template: './src/client/index.html',
       filename: './index.html'
+    }),
+    new ExtractTextWebpackPlugin({
+      filename: '[name].css',
+      allChunks: true,
     })
   ]
 };

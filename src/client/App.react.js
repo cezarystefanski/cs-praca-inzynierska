@@ -5,7 +5,7 @@ import classes from './App.scss';
 const App = () => (
   <div>
     <h1 className={classes.heading}>React App starting point</h1>
-    <h2>Initial stuff</h2>
+    <h2 className={classes['test__heading-small']}>Initial stuff</h2>
   </div>
 );
 

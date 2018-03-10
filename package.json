@@ -19,6 +19,7 @@
     "chalk": "^2.3.2",
     "dotenv": "^5.0.1",
     "express": "^4.16.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "html-webpack-plugin": "^3.0.4",
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
