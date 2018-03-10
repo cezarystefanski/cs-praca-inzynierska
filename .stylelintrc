@@ -1,4 +1,5 @@
-{
+{ 
+  "extends": "stylelint-config-recommended",
   "plugins": [
     "stylelint-order",
     "stylelint-csstree-validator"
@@ -174,15 +175,12 @@
     "no-extra-semicolons": true,
     "no-missing-end-of-source-newline": true,
     "no-unknown-animations": true,
-    "csstree/validator": [
-      true,
-      {
-        "ignore": [
-          "composes",
-          "compose-with"
-        ]
-      }
-    ],
+    "csstree/validator": {
+      "ignore": [
+        "composes",
+        "compose-with"
+      ]
+    },
     "order/order": [
       [
         "custom-properties",
@@ -532,5 +530,5 @@
         "severity": "warning"
       }
     ]
-  },
+  }
 }
