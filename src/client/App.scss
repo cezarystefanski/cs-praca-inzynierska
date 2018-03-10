@@ -7,9 +7,11 @@
 
   display: flex;
 
-  :global {
-    .fatLetter {
-      color: rgb(0, 0, 0);
-    }
+  :global(.fatLetter) {
+    color: rgb(0, 0, 0);
+  }
+
+  :local(.italicLetter) {
+    text-transform: uppercase;
   }
 }

@@ -2,11 +2,14 @@ import React from 'react';
 
 import classes from './App.scss';
 
-const App = () => (
-  <div>
-    <h1 className={classes.heading}>React App starting point</h1>
-    <h2 className={classes['test__heading-small']}>Initi<span className={classes.fatLetter}>al</span> stuff</h2>
-  </div>
-);
+const App = () => {
+  const init = 'Initial stuff';
+  return (
+    <div>
+      <h1 className={classes.heading}>React App starting point</h1>
+      <h2>{init}</h2>
+    </div>
+  );
+};
 
 export default App;
