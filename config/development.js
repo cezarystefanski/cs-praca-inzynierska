@@ -6,7 +6,7 @@ const config = {
   entry: path.resolve(__dirname, '..', './src/client/index.js'),
   output: {
     path: path.resolve(__dirname, '..', 'dist'),
-    filename: 'main.js'
+    filename: 'main.js',
   },
   devServer: {
     contentBase: path.resolve(__dirname, '..', 'src/client'),
@@ -17,17 +17,17 @@ const config = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
-        }
+          loader: 'babel-loader',
+        },
       },
       {
         test: /\.html$/,
         use: [
           {
             loader: 'html-loader',
-            options: { minimize: true }
-          }
-        ]
+            options: { minimize: true },
+          },
+        ],
       },
       {
         test: /\.scss$/,
@@ -39,25 +39,25 @@ const config = {
               options: {
                 modules: true,
                 localIdentName: '[name]__[local]--[hash:base64:5]',
-              }
+              },
             },
             'postcss-loader',
             'sass-loader',
-          ]
-        })
+          ],
+        }),
       },
-    ]
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/client/index.html',
-      filename: './index.html'
+      filename: './index.html',
     }),
     new ExtractTextWebpackPlugin({
       filename: '[name].css',
       allChunks: true,
-    })
-  ]
+    }),
+  ],
 };
 
 module.exports = config;
