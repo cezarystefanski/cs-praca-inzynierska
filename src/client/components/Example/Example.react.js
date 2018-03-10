@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ROUTE_NAMES } from '../../consts';
+import { ROUTE_NAMES } from '../../constants';
 import generateTitle from '../../helpers';
 
 import classes from './Example.scss';
