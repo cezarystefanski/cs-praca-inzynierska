@@ -1,6 +1,7 @@
 const TITLES = {
-  home: 'Home',
-  example: 'Example',
+  Home: 'Home',
+  Example: 'Example',
+  PortalTitle: 'MusRate',
 };
 
 export default TITLES;

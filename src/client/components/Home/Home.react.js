@@ -1,13 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ROUTE_NAMES } from '../../consts';
+import generateTitle from '../../helpers';
 
 import classes from './Home.scss';
 
+const componentTitle = 'Home';
+
 const Home = () => {
   const init = 'Initial stuff';
+
   return (
     <div>
+      {generateTitle(componentTitle)}
       <h1 className={classes.heading}>React App starting point</h1>
       <h2>{init}</h2>
       <p>
