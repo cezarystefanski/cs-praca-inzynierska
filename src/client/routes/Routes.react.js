@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { ROUTE_NAMES } from '../constants';
-import { Example, Home } from '../components';
+import { Example, Home } from '../containers';
 
 const Routes = () => (
   <BrowserRouter>
