@@ -4,8 +4,8 @@ module.exports = {
       browsers: [
         'last 2 versions',
         'IE >= 9',
-        'safari >= 8'
-      ]
-    }
-  }
+        'safari >= 8',
+      ],
+    },
+  },
 };
