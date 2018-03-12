@@ -8,12 +8,16 @@
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
     "eslint": "eslint src/**/*.js",
-    "stylelint": "stylelint src/**/*.scss",
-    "lint": "npm-run-all eslint stylelint"
+    "stylelint": "stylelint src/**/*.scss"
+  },
+  "lint-staged" :{
+    "*.{js,jsx}": "eslint",
+    "*.css": "stylelint",
+    "*.scss": "stylelint --syntax=scss"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint"
+      "pre-commit": "lint-staged"
     }
   },
   "repository": {
@@ -54,6 +58,7 @@
     "eslint-plugin-react": "^7.4.0",
     "html-loader": "^0.5.5",
     "husky": "^0.15.0-rc.8",
+    "lint-staged": "^7.0.0",
     "node-sass": "^4.7.2",
     "npm-run-all": "^4.1.2",
     "postcss-loader": "^2.1.1",
