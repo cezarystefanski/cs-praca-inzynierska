@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { TITLES } from '../constants';
+import { TITLES } from '../../constants';
 
 const createTitle = (name) => {
   const titleHead = name && TITLES[name] ? TITLES[name] : '';
