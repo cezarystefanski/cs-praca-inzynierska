@@ -11,6 +11,10 @@
     "stylelint": "stylelint src/**/*.scss",
     "test": "jest"
   },
+  "jest": {
+    "bail": true,
+    "verbose": true
+  },
   "lint-staged": {
     "*.{js,jsx}": [
       "eslint",
