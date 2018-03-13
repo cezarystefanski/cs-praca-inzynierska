@@ -42,13 +42,8 @@ class Home extends Component {
 
 Home.propTypes = {
   homeVisits: PropTypes.number.isRequired,
-  onHomeVisit: PropTypes.func,
-  onResetClick: PropTypes.func,
-};
-
-Home.defaultProps = {
-  onResetClick: () => {},
-  onHomeVisit: () => {},
+  onHomeVisit: PropTypes.func.isRequired,
+  onResetClick: PropTypes.func.isRequired,
 };
 
 export default Home;

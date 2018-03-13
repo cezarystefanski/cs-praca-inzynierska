@@ -9,7 +9,7 @@ import classes from './Example.scss';
 const componentTitle = 'Example';
 
 const Example = (props) => {
-  const exampleNum = Math.floor(Math.random() * 500);
+  const exampleNum = 500;
   const {
     exampleStoreNumber,
     onBindClick,

@@ -20,7 +20,9 @@
     "collectCoverageFrom": [
       "src/**/*.js",
       "!**/node_modules/**",
-      "!**/dist/**"
+      "!**/dist/**",
+      "!src/client/index.js",
+      "!src/server/index.js"
     ],
     "coverageDirectory": "coverage/",
     "coverageThreshold": {

@@ -1,18 +1,23 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { MemoryRouter } from 'react-router-dom';
-import Home from './Home.react';
+import Example from './Example.react';
 
-const homeMock = renderer
+const exampleMock = renderer
   .create((
     <MemoryRouter>
-      <Home homeVisits={0} onResetClick={() => {}} onHomeVisit={() => {}} />
+      <Example
+        exampleStoreNumber={500}
+        onBindClick={() => {}}
+        onIncreaseClick={() => {}}
+        onDecreaseClick={() => {}}
+      />
     </MemoryRouter>
   ))
   .toJSON();
 
 describe('home component', () => {
   it('renders correctly', () => {
-    expect(homeMock).toMatchSnapshot();
+    expect(exampleMock).toMatchSnapshot();
   });
 });
