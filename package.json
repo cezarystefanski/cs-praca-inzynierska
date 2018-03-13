@@ -11,7 +11,8 @@
     "stylelint": "stylelint src/**/*.scss",
     "lint": "npm-run-all eslint stylelint",
     "test": "jest --coverage",
-    "test:all": "npm-run-all lint test"
+    "test:all": "npm-run-all lint test",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
   },
   "jest": {
     "bail": true,
@@ -27,10 +28,10 @@
     "coverageDirectory": "coverage/",
     "coverageThreshold": {
       "global": {
-        "branches": 80,
-        "functions": 20,
-        "lines": 20,
-        "statements": 20
+        "branches": 65,
+        "functions": 65,
+        "lines": 65,
+        "statements": 65
       }
     },
     "moduleNameMapper": {
@@ -52,7 +53,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "?.git"
+    "url": "https://github.com/cezarystefanski/cs-praca-inzynierska.git"
   },
   "author": "Cezary Stefanski",
   "license": "MIT",
@@ -80,6 +81,7 @@
     "babel-loader": "^7.1.3",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "coveralls": "^3.0.0",
     "css-loader": "^0.28.10",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
