@@ -9,7 +9,9 @@
     "build": "webpack --mode production",
     "eslint": "eslint src/**/*.js",
     "stylelint": "stylelint src/**/*.scss",
-    "test": "jest --coverage"
+    "lint": "npm-run-all eslint stylelint",
+    "test": "jest --coverage",
+    "test:all": "npm-run-all lint test"
   },
   "jest": {
     "bail": true,

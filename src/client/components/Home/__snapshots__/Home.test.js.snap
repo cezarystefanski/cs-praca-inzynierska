@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`home component renders correctly 1`] = `
+<div>
+  <h1
+    className="heading"
+  >
+    React App starting point
+  </h1>
+  <h2>
+    Initial stuff
+  </h2>
+  <small>
+    Times homepage was visited: 
+    <span
+      className="numHomeVisits"
+    >
+      0
+    </span>
+  </small>
+  <button
+    onClick={[Function]}
+  >
+    Reset home visits number
+  </button>
+  <p>
+    <a
+      href="/example"
+      onClick={[Function]}
+    >
+      Link to examples
+    </a>
+  </p>
+</div>
+`;

@@ -30,7 +30,7 @@ class Home extends Component {
         {generateTitle(componentTitle)}
         <h1 className={classes.heading}>React App starting point</h1>
         <h2>{init}</h2>
-        <small>Times homepage was visited: {homeVisits}</small>
+        <small>Times homepage was visited: <span className="numHomeVisits">{homeVisits}</span></small>
         <button onClick={onResetClick}>Reset home visits number</button>
         <p>
           <Link to={ROUTE_NAMES.example}>Link to examples</Link>
@@ -42,8 +42,13 @@ class Home extends Component {
 
 Home.propTypes = {
   homeVisits: PropTypes.number.isRequired,
-  onHomeVisit: PropTypes.func.isRequired,
-  onResetClick: PropTypes.func.isRequired,
+  onHomeVisit: PropTypes.func,
+  onResetClick: PropTypes.func,
+};
+
+Home.defaultProps = {
+  onResetClick: () => {},
+  onHomeVisit: () => {},
 };
 
 export default Home;
