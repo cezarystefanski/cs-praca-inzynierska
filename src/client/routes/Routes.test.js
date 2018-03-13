@@ -7,8 +7,8 @@ configure({ adapter: new Adapter() });
 
 const routeMock = shallow(<Routes />);
 
-describe('dsadasda', () => {
-  it('dsadadada', () => {
-    expect(routeMock).toBeDefined();
+describe('routes', () => {
+  it('chould render route map', () => {
+    expect(routeMock.find('Route').exists()).toEqual(true);
   });
 });
