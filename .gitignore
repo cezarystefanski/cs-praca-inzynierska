@@ -4,7 +4,6 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-dist/
 
 # Runtime data
 pids
@@ -17,6 +16,7 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
+.coveralls.yml
 
 # nyc test coverage
 .nyc_output
@@ -32,6 +32,9 @@ bower_components
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
+dist
+dist/
+/dist/*
 
 # Dependency directories
 node_modules/

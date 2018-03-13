@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`home component renders correctly 1`] = `
+<div>
+  <p>
+    New example number is 
+    <span
+      className="exampleNumber"
+    >
+      500
+    </span>
+    <button
+      onClick={[Function]}
+    >
+      Bind to store
+    </button>
+  </p>
+  <p>
+    <small>
+      Store number is 
+      <span
+        className="exampleNumber"
+      >
+        500
+      </span>
+    </small>
+    <button
+      onClick={[Function]}
+    >
+      -
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      +
+    </button>
+  </p>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    Link to home
+  </a>
+</div>
+`;
