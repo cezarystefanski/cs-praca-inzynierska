@@ -7,7 +7,7 @@ import {
   RESET_HOME_VISITS,
 } from '../actions';
 
-const exampleNumber = (state = 0, action) => {
+export const exampleNumber = (state = 0, action) => {
   switch (action.type) {
     case CHANGE_EXAMPLE_NUMBER:
       return action.number;
@@ -20,7 +20,7 @@ const exampleNumber = (state = 0, action) => {
   }
 };
 
-const homeVisits = (state = 0, action) => {
+export const homeVisits = (state = 0, action) => {
   switch (action.type) {
     case INCREASE_HOME_VISITS:
       return state + 1;
