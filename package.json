@@ -9,12 +9,12 @@
     "build": "webpack --mode production",
     "eslint": "eslint src/**/*.js",
     "stylelint": "stylelint src/**/*.scss",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "jest": {
     "bail": true,
     "verbose": true,
-    "collectCoverage": true,
+    "collectCoverage": false,
     "collectCoverageFrom": [
       "src/**/*.js",
       "!**/node_modules/**",
@@ -23,7 +23,7 @@
     "coverageDirectory": "coverage/",
     "coverageThreshold": {
       "global": {
-        "branches": 20,
+        "branches": 80,
         "functions": 20,
         "lines": 20,
         "statements": 20
